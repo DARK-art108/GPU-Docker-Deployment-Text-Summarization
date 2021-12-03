@@ -15,6 +15,7 @@ COPY . .
 
 
 RUN pip3 install --no-cache-dir -r requirements.txt
+RUN python3 download_HF_Question_Generation_summarization.py
 
 ENV LC_ALL=C.UTF-8
 ENV LANG=C.UTF-8
