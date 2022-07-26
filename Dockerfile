@@ -6,6 +6,7 @@ RUN apt-get update && apt-get install --no-install-recommends --no-install-sugge
 RUN apt-get install unzip
 RUN apt-get -y install python3
 RUN apt-get -y install python3-pip
+RUN nvidia-smi
 
 # Copy our application code
 WORKDIR /var/app
